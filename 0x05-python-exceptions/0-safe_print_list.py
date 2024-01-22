@@ -1,6 +1,4 @@
 #!/usr/bash/python3
-
-
 def safe_print_list(my_list=[], x=0):
     elements_to_print = 0
     try:
