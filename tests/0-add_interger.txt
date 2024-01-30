@@ -1,0 +1,22 @@
+# Test case for the add_integer function
+# The add_integer function adds two integers and returns the result
+
+# Test case 1: Two integers
+# Expected 0utput: 10
+7 3
+
+# Test case 2: Integer and float
+# Expected output: 6
+4.0 2
+
+# Test case 3: Two floats
+# Expected output : 7
+4.0 3.0
+
+# Test case 4: Negative integers
+# Expected output: -8
+-5 -3
+
+# Test case 5: Negative float integer
+# Expected output: -9
+-5.0 -4.0
