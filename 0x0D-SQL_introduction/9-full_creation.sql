@@ -1,5 +1,5 @@
 -- creates a table second_table in hbtn_0c_0 database
-CREATE TABLE IF NOT EXISTS second_table (id INT, name VARCHAR(256), score INT):
+CREATE TABLE IF NOT EXISTS second_table (id INT, name VARCHAR(256), score INT);
 
 -- script create maximum of 4 records
 INSERT INTRO 'second_table' ('id', 'name', 'score') VALUES (1, "John", 10);
