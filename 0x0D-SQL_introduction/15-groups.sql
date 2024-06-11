@@ -4,4 +4,4 @@
 
 SELECT score, COUNT(1) As number FROM second_table
 GROUP BY score
-ORDERED BY number DESC;
+ORDER BY number DESC;
