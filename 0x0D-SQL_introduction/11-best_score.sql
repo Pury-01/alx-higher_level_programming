@@ -3,4 +3,4 @@
 -- results dispaly both the score and the name
 -- Records are ordered by score (top first)
 
-SELECT score, name FROM second_table WHERE score >= 10 ORDERED BY score DESC;
+SELECT score, name FROM second_table WHERE score >= 10 ORDER BY score DESC;
