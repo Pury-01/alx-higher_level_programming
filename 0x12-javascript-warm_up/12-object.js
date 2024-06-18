@@ -4,7 +4,7 @@
 
 const myObject = {
   type: 'object',
-  vaue: 12
+  value: 12
 };
 
 console.log(myObject);
