@@ -25,7 +25,7 @@ def states():
 
     cursor.execute((
             "SELECT * FROM states WHERE name LIKE 'N%' "
-            "ORDER BY name ASC"
+            "ORDER BY states.id ASC"
             ))
     """execute sql query"""
 
