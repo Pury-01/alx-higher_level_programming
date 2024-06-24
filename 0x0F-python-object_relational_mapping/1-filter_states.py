@@ -23,7 +23,10 @@ def states():
     cursor = db.cursor()
     """cursor object to execute query"""
 
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY name ASC")
+    cursor.execute((
+            "SELECT * FROM states WHERE name LIKE 'N%' "
+            "ORDER BY name ASC"
+            ))
     """execute sql query"""
 
     results = cursor.fetchall()
