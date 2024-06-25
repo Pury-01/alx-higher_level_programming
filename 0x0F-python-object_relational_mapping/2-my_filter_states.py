@@ -26,12 +26,14 @@ def states():
     """cursor object to query mysql"""
     cursor = db.cursor()
 
-    """execute query with given input"""
+    """create sql query with format"""
     query = (
-            "SELECT * FROM states WHERE name = %s"
-            "ORDER BY states.id ASC"
+            "SELECT * FROM states WHERE name = '{}'"
+            "ORDER BY states.id ASC".format(state_name_searched)
             )
-    cursor.execute(query, (state_name_searched,))
+
+    """Execute query"""
+    cursor.execute(query)
 
     """fetch all the results"""
     results = cursor.fetchall()
