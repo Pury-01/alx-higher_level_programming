@@ -2,7 +2,6 @@
 """takes argument and displays all values in the states table
 where name matches the argument.
 """
-
 import MySQLdb
 import sys
 
@@ -39,8 +38,10 @@ def states():
     for row in results:
         print(row)
 
-    """close cursor and database connection"""
+    """close cursor"""
     cursor.close()
+
+    """close database connection"""
     db.close()
 
 
