@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-"""takes argument and displays all values in the states table
+"""
+Takes argument and displays all values in the states table
 where name matches the argument.
 """
+
 import MySQLdb
 import sys
 
