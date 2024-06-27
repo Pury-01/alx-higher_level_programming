@@ -23,14 +23,20 @@ def cities():
     cursor = db.cursor()
 
     """sql query execution"""
-    query = "SELECT * FROM cities ORDER BY cities.id ASC"
+    query = """
+    SELECT cities.id, cities.name, states.name
+    FROM cities
+    JOIN states ON cities.state_id = states.id
+    ORDER BY cities.id ASC
+    """
+
     cursor.execute(query)
 
     """fetch all results"""
     results = cursor.fetchall()
 
-    for result in results:
-        print(result)
+    for row in results:
+        print(row)
 
     """close cursor and database connection"""
     cursor.close()
