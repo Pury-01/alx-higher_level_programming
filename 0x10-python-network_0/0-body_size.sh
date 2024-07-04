@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
-[ -z "$1" ] && { echo "Usage: $0 <URL>"; exit 1; }
-curl -s "$1" | wc -c
+#!/usr/bin/bash
+# displays the size of the body of the response
+[ -n "$1" ] && curl -s "$1" | wc -c
